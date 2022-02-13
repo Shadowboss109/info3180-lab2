@@ -1,12 +1,13 @@
 """
-Flask Documentation:     https://flask.palletsprojects.com/
-Jinja2 Documentation:    https://jinja.palletsprojects.com/
-Werkzeug Documentation:  https://werkzeug.palletsprojects.com/
+Flask Documentation:     http://flask.pocoo.org/docs/
+Jinja2 Documentation:    http://jinja.pocoo.org/2/documentation/
+Werkzeug Documentation:  http://werkzeug.pocoo.org/documentation/
 This file creates your application.
 """
 
 from app import app
 from flask import render_template, request, redirect, url_for, flash
+import datetime
 
 
 ###
@@ -22,7 +23,18 @@ def home():
 @app.route('/about/')
 def about():
     """Render the website's about page."""
-    return render_template('about.html', name="Mary Jane")
+    return render_template('about.html', name="Theodore Bennett")
+
+@app.route('/profile')
+def profile():
+    return render_template('profile.html', date_joined= format_date_joined(3,2,2022) )
+
+
+#date joined
+
+def format_date_joined(day,month,year):
+    date_joined = datetime.date(year,month,day)
+    return ("Joined " + date_joined.strftime("%B, %Y"))
 
 
 ###

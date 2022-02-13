@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class="profile_container">
+    <div id="con">
+    <div class="top">
+        <div id="profile_image">
+            <img src="{{ url_for('static', filename='profile_pic.jfif') }}" alt="Theodore's photo">
+        </div>
+        <div class="info1">
+            <p id="my_name">Theodore Bennett</p>
+        </div>
+        <div class="info1">
+            <p id="email">@tbennett</p>
+        </div>
+        <div class="info1">
+            <p  id="address">Kingston, Jamaica</p>
+        </div>
+        <div class="info1">
+            <p id="date_joined">{{ date_joined }}</p>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="info2">
+            <p class="bio">
+                I currently attend the University of the West Indies. 
+                I am a determine and ambitious person who is 
+                giving my all to become a full stack developer.
+                I practice each night so I can improve my skills.
+
+
+            </p>
+        </div>
+        <div class="info2">
+            <table id="table1" >
+                <tr class="colomn_values">
+                  <td>12</td>
+                  <td>101</td>
+                  <td>350</td>
+                </tr>
+                <tr class="colomn_header">
+                  <td>Posts</td>
+                  <td>Following</td>
+                  <td>Followers</td>
+                </tr>
+             </table>
+        </div>
+        <div class="info2">
+            <button id="follow_button">Follow</button>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

@@ -1,3 +1,73 @@
 body {
     padding-top: 5rem;
 }
+img{
+    height: 200px;
+    border-radius: 50%;
+
+}
+
+.profile_container{
+    border-color: grey;
+    border-style: solid;
+   
+    width: 40%;
+    border-radius: 8px;
+
+}
+
+.top{
+    background-color: blue;
+    color: azure;
+    border-radius: 6px 6px 0% 0% ;
+    
+}
+#profile_image{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+#my_name{
+    font-size: 28px;
+    margin: 2px;
+}
+.bottom{
+    padding: 20px 40px;
+
+}
+
+td{
+    padding: 4px 28px;
+    text-align: center;
+}
+#follow_button{
+    border: none;
+    background-color: rgb(133, 235, 133);
+    color: white;
+    border-radius: 4px;
+    padding: 6px 50px;
+    margin: 25px;
+}
+.info1,.info2{
+    display: flex;
+    justify-content: center;
+}
+
+.colomn_header,.colomn_values{
+    text-align: center;
+}
+.colomn_values{
+    font-weight: bold;
+    font-size: 20px;
+}
+#email{
+    margin: 2px;
+}
+
+.colomn_header,.bio{
+    color: rgb(161, 159, 159);
+}
+#address{
+    margin: 4px;
+}
